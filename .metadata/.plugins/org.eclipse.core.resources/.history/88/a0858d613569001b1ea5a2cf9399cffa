@@ -1,0 +1,17 @@
+package quiz.ObjectRepo;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+
+public class Upcoming {
+	@FindBy(xpath="//li[@class='nav-item']/a[@class='nav-link']")
+	private WebElement UpcomingQuiz;
+	
+public void Login4Quiz()
+{
+	
+	UpcomingQuiz.click();
+	
+}
+}

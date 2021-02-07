@@ -1,0 +1,18 @@
+package quiz.ObjectRepo;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import quiz.GenericLib.Constants;
+
+public class Quizindex {
+	@FindBy(xpath="//h4[contains(text(),'\"GENERAL KNOWLEDGE QUIZ 1\"')]")
+	private WebElement LoginEdit;
+	
+	@FindBy(xpath="//span[contains(text(),'Active Participants')]")
+public void Playquizindex()
+{
+
+	
+}
+}

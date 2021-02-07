@@ -1,0 +1,11 @@
+package quiz.GenericLib;
+
+import java.util.concurrent.TimeUnit;
+
+public class WebcLib {
+	public void PageToLoad()
+	{
+		BaseClass.driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	}
+
+}
