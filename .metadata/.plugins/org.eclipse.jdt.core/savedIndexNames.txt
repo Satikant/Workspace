@@ -16,7 +16,6 @@ INDEX VERSION 1.131+C:\ProjectWork\Eclipse Workspace\.metadata\.plugins\org.ecli
 1751734070.index
 1787904036.index
 1412241267.index
-383707517.index
 3708233355.index
 2361384512.index
 1219160020.index

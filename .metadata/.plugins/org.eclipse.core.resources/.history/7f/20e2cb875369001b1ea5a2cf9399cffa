@@ -35,7 +35,7 @@ public class BaseClass {
 	@AfterClass
 	public void CloseBrowser()
 	{
-	driver.quit();	
+	//driver.quit();	
 	}
 	@BeforeMethod
 	public void LoginToApp()

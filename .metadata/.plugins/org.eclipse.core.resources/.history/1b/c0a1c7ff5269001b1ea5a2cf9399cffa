@@ -35,13 +35,8 @@ public class Quizindex {
 	//Fourth Question
 	@FindBy(xpath="//h5[@class='card-title quizquestion']")
 	private WebElement FourthQuestion;
-	@FindBy(xpath="//div[contains(text(),'21')]")
+	@FindBy(xpath="//div[contains(text(),' 21')]")
 	private WebElement FourthAnswer;
-	//Fifth Question
-	@FindBy(xpath="//h5[@class='card-title quizquestion']")
-	private WebElement FifthQuestion;
-	@FindBy(xpath="//div[contains(text(),'United Provinces of Agra and Oudh')]")
-	private WebElement FifthAnswer;
 	
 public void Playquizindex() throws Throwable
 {
@@ -50,8 +45,7 @@ String actheadertext=index.getText();
 String expheadertext="\"GENERAL KNOWLEDGE QUIZ 1\"";
 verify.assertEquals(actheadertext, expheadertext);
 System.out.println("Header Verify " + verify);
-Reporter.log(actheadertext, true);
-
+Reporter.log("Verify Header", true);
 Thread.sleep(30000);
 
 //String actquiztext=participants.getText();
@@ -61,30 +55,15 @@ Thread.sleep(30000);
 //Reporter.log("Verify Partcipants", true);
 
 //Action on question
-String printfirst=FirstQuestion.getText();
-Reporter.log(printfirst, true);
-FirstAnswer.click();
+String print=FirstQuestion.getText();
+System.out.println(print);
 
+FirstAnswer.click();
 Thread.sleep(30000);
 String printsecond=SecondQuestion.getText();
-Reporter.log(printsecond, true);
+System.out.println(printsecond);
 secondAnswer.click();
 
-//3rd			
-Thread.sleep(30000);
-String printthird=ThrirdQuestion.getText();
-Reporter.log(printthird, true);
-ThrirdAnswer.click();
-//4th
-Thread.sleep(30000);
-String printfourth=FourthQuestion.getText();
-Reporter.log(printfourth, true);
-FourthAnswer.click();
-
-Thread.sleep(30000);
-String printfifth=FifthQuestion.getText();
-Reporter.log(printfifth, true);
-FifthAnswer.click();
 verify.assertAll();
 	
 }
